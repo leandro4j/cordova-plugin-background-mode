@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-background-mode"
+        id="hnz-cordova-plugin-background-mode"
         version="0.6.5">
 
     <name>BackgroundMode</name>
@@ -33,15 +33,13 @@
         <clobbers target="plugin.backgroundMode" />
     </js-module>
 
-    <!-- ios -->
+    <!-- ios not applicable 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="BackgroundMode">
                 <param name="ios-package" value="APPBackgroundMode" />
             </feature>
         </config-file>
-
-        <!-- The app is able to run in background through audio mode -->
         <config-file target="*-Info.plist" parent="UIBackgroundModes">
             <array>
                 <string>audio</string>
@@ -52,7 +50,7 @@
 
         <header-file src="src/ios/APPBackgroundMode.h" />
         <source-file src="src/ios/APPBackgroundMode.m" />
-    </platform>
+    </platform>-->
 
     <!-- android -->
     <platform name="android">
